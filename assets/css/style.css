@@ -1,0 +1,44 @@
+:root {
+    --desert-blue: #2B4A6B;
+    --warm-sand: #F5E6CC;
+    --sage-green: #8A9A5B;
+    --sunset-orange: #D97706;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+.first-tier{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.second-tier{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.hero{
+    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 600px;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .hero > * {
+    position: relative;
+    z-index: 2;
+    color: white; /* Example styling for content */
+    text-align: center;
+    padding-top: 200px; /* Adjust as needed */
+  }
